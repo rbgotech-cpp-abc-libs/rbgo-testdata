@@ -1,0 +1,69 @@
+:document-title: TstDsTblEspPs: Test Data Source Table; Espressif Product Selector!
+:table-caption: off
+
+= *TstDsTblEspPs: Test Data Source Table*
+
+[.big]"`**_Espressif Product Selector!_**`"
+
+[caption="" cols="25h,~m" frame=all grid=all width=50%]
+|===
+
+|last update
+|20230626
+
+|language
+|C++
+
+|namespace
+|rbgo
+
+|library ref
+|rbgotech/TstDsTblEspPs
+
+|entry points
+|TstDsTblEspPs.h
+
+|dependencies
+|rbgotech/rbgo-types
+
+|environment
+|VSCode, Platformio
+
+|platform
+|all
+
+|framework
+|all
+|===
+
+=== Description
+
+Class TstDsTblEspPs.
+
+Represents a test data source in the form of a table, having 12 columns and
+ 226 rows. It was copied from https://products.espressif.com/#/product-selector.
+
+TstDsTblEspPs was initially used for the development of class VBArray.
+The following table shows the available methods.
+
+[caption="" cols="40m,~d" frame=all grid=all width=50%]
+|===
+
+|Tu8 colCount();
+|Get number of columns.
+
+|const char** colNames();
+|Get column names.
+
+|Tu8 rowCount();
+|Get number of rows.
+
+|const char** rowFms();
+|Get row format strings for each column.
+
+|const char* rowSep();
+|Get row separator; it spans all fms's.
+
+|const char** iterate(bool init=false);
+|Get each row in iteration.
+|===
