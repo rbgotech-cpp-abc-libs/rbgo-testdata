@@ -1,4 +1,4 @@
-#include <TstDsTblEspPs.h>
+#include <rbgo-testdata.h>
 
 namespace rbgo {
 
