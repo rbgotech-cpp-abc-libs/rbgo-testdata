@@ -1,11 +1,11 @@
 {
-	"name": "rbgotech/TstDsTblEspPs",
-	"version": "1.0.0",
-	"description": "Test Data Source Table: Espressif Product Selector!",
-	"keywords": "data, test data, bulk data, table",
+	"name": "rbgotech/rbgo-testdata",
+	"version": "0.0.1",
+	"description": "All sorts of data to develop and test with!",
+	"keywords": "data, test data, bulk data, array data, table data, tree data",
 	"repository":{
 		"type": "git",
-		"url": "https://github.com/rbgotech-cpp-libs/all-tst_ds-tbl_esp-ps.git"
+		"url": "https://github.com/rbgotech-cpp-abc-libs/rbgo-testdata.git"
 	},
 	"authors":[{
 		"name": "Robert Goossens (rbgo)",
@@ -14,10 +14,10 @@
 		"maintainer": true
 	}],
 	"license": "MIT",
-	"homepage": "https://github.com/rbgotech-cpp-libs/all-tst_ds-tbl_esp-ps",
+	"homepage": "https://github.com/rbgotech-cpp-abc-libs/rbgo-testdata",
 	"dependencies":{
 		"rbgotech/rbgo-types": "*"
 	},
-	"frameworks": "*",
-	"platforms": "*"
+	"platforms": "*",
+	"frameworks": "*"
 }
