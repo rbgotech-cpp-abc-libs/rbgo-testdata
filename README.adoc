@@ -1,15 +1,15 @@
-:document-title: TstDsTblEspPs: Test Data Source Table; Espressif Product Selector!
+:document-title: rbgo-testdata: ____REALNAME____
 :table-caption: off
 
-= *TstDsTblEspPs: Test Data Source Table*
+= *rbgo-testdata*
 
-[.big]"`**_Espressif Product Selector!_**`"
+[.big]"`**_All sorts of data to develop and test with!_**`"
 
-[caption="" cols="25h,~m" frame=all grid=all width=50%]
+[caption="" cols="25h,~m" frame=all grid=all width=100%]
 |===
 
 |last update
-|20230626
+|20230715
 
 |language
 |C++
@@ -18,10 +18,10 @@
 |rbgo
 
 |library ref
-|rbgotech/TstDsTblEspPs
+|rbgotech/rbgo-testdata
 
 |entry points
-|TstDsTblEspPs.h
+|rbgo-testdata.h
 
 |dependencies
 |rbgotech/rbgo-types
@@ -34,36 +34,49 @@
 
 |framework
 |all
+
+|call deps
+|none
 |===
 
 === Description
 
-Class TstDsTblEspPs.
+This repository represents a library with all sorts of test data that an
+application can use during its develop and test iterations.
 
-Represents a test data source in the form of a table, having 12 columns and
- 226 rows. It was copied from https://products.espressif.com/#/product-selector.
 
-TstDsTblEspPs was initially used for the development of class VBArray.
-The following table shows the available methods.
-
-[caption="" cols="40m,~d" frame=all grid=all width=50%]
+.Functionality
+[options="header" caption="" cols="4h,6m" frame=all grid=all width=100%]
 |===
+|function
+|description
+
+2+^m|`#class TstDsTblEspPs#`
+2+d|
+Read: `Test data source table: ESP Product Selector`. +
+Snapshot date 20230623, from source: https://products.espressif.com/#/product-selector
+
+The table consists of 226 x 12 strings, is layed out inside `src/TstDsTblEspPs.cpp`, +
+together with implementation of this class as means to access it.
+
+The initial use for this data source is development of rbgo-vparray.
 
 |Tu8 colCount();
-|Get number of columns.
+|Get the number of columns.
 
 |const char** colNames();
-|Get column names.
+|Get the column names.
 
 |Tu8 rowCount();
-|Get number of rows.
+|Get the number of rows.
 
 |const char** rowFms();
-|Get row format strings for each column.
+|Get the row printf format strings for each column; also good for the column header.
 
 |const char* rowSep();
-|Get row separator; it spans all fms's.
+|Separator '---' chars line for column header and table end to make it look good.
 
 |const char** iterate(bool init=false);
-|Get each row in iteration.
+|Return next row upon each call. Use rowFms() to printf each string.
+
 |===
