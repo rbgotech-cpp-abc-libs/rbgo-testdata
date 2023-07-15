@@ -1,4 +1,4 @@
-:document-title: rbgo-testdata: ____REALNAME____
+:document-title: rbgo-testdata
 :table-caption: off
 
 = *rbgo-testdata*
